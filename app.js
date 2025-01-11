@@ -18,5 +18,9 @@ myStudents.push("noor");
 myStudents[myStudents.length] = "hashim";
 
 
-//معرفة نوع ال array 
-let type = typeof myStudents;
+//طباعة كل الطلاب الذين تزيد طول اسمائهم عن 5
+console.log(myStudents.filter( s=> s.length > 5))
+//طباعة طول كل الاسماء للطلاب
+myStudents.forEach( s => console.log(s.length))
+//ايجاد اول اسم يتنهي بr
+console.log(myStudents.find(s => s.endsWith("r")))
